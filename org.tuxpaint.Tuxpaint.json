@@ -1,0 +1,237 @@
+{
+    "app-id": "org.tuxpaint.Tuxpaint",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "1.4",
+    "sdk": "org.freedesktop.Sdk",
+    "finish-args": [
+        "--device=dri",
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=pulseaudio",
+        "--persist=.tuxpaint"
+    ],
+    "command": "tuxpaint",
+    "rename-desktop-file": "tuxpaint.desktop",
+    "rename-icon": "tuxpaint",
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/aclocal",
+        "/share/gtk-doc",
+        "/share/man",
+        "*.la", "*.a"
+    ],
+    "modules": [
+        {
+            "name": "SDL",
+            "rm-configure": true,
+            "config-opts": ["--disable-static"],
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.libsdl.org/release/SDL-1.2.15.tar.gz",
+                    "sha256": "d6d316a793e5e348155f0dd93b979798933fb98aa1edebcc108829d6474aad00"
+                },
+                {
+                    "type": "patch",
+                    "path": "sdl-libx11-build.patch"
+                }
+            ]
+        },
+        {
+            "name": "SDL_mixer",
+            "config-opts": ["--disable-static"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.libsdl.org/projects/SDL_mixer/release/SDL_mixer-1.2.12.tar.gz",
+                    "sha256": "1644308279a975799049e4826af2cfc787cad2abb11aa14562e402521f86992a"
+                }
+            ]
+        },
+        {
+            "name": "SDL_ttf",
+            "config-opts": ["--disable-static"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-2.0.11.tar.gz",
+                    "sha256": "724cd895ecf4da319a3ef164892b72078bd92632a5d812111261cde248ebcdb7"
+                }
+            ]
+        },
+        {
+            "name": "libdatrie",
+            "config-opts": ["--disable-static"],
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://linux.thai.net/pub/thailinux/software/libthai/libdatrie-0.2.9.tar.xz",
+                    "sha256": "d980713e7ad8e19cf3b54ee0173782b94332af8e7e4e936dde01d2cd72e1da1d"
+                }
+            ]
+        },
+        {
+            "name": "libthai",
+            "config-opts": ["--disable-static"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://linux.thai.net/pub/thailinux/software/libthai/libthai-0.1.22.tar.xz",
+                    "sha256": "bdb291dcc3a6784e86b1b342ec75005e9ab487f8c1decc7c3e7d18d1bbc9b7b7"
+                }
+            ]
+        },
+        {
+            "name": "pango",
+            "config-opts": [
+                "--disable-introspection",
+                "--disable-static"
+            ],
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/pango/1.40/pango-1.40.3.tar.xz",
+                    "sha256": "abba8b5ce728520c3a0f1535eab19eac3c14aeef7faa5aded90017ceac2711d3"
+                }
+            ]
+        },
+        {
+            "name": "SDL_pango",
+            "config-opts": ["--disable-static"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/project/sdlpango/SDL_Pango/0.1.2/SDL_Pango-0.1.2.tar.gz",
+                    "sha256": "7f75d3b97acf707c696ea126424906204ebfa07660162de925173cdd0257eba4"
+                },
+                {
+                    "type": "patch",
+                    "path": "SDL_Pango-0.1.2-API-adds.patch"
+                }
+            ]
+        },
+        {
+            "name": "SDL_image",
+            "config-opts": ["--disable-static"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.libsdl.org/projects/SDL_image/release/SDL_image-1.2.12.tar.gz",
+                    "sha256": "0b90722984561004de84847744d566809dbb9daf732a9e503b91a1b5a84e5699"
+                }
+            ]
+        },        
+        {
+            "name": "fribidi",
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://fribidi.org/download/fribidi-0.19.7.tar.bz2",
+                    "sha256": "08222a6212bbc2276a2d55c3bf370109ae4a35b689acbc66571ad2a670595a8e"
+                }
+            ]
+        },
+        {
+            "name": "libpaper",
+            "config-opts": ["--disable-static"],
+            "cleanup": [
+                "/bin",
+                "/sbin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://http.debian.net/debian/pool/main/libp/libpaper/libpaper_1.1.24+nmu5.tar.gz",
+                    "sha256": "e29deda4cd7350189c71af0925cbf4a4473f9841d1419a922e1e8ff1954db1f2"
+                },
+                {
+                    "type": "script",
+                    "commands": ["autoreconf -vfi"],
+                    "dest-filename": "autogen.sh"
+                }
+            ]
+        },
+        {
+            "name": "libcroco",
+            "config-opts": ["--disable-static"],
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libcroco/0.6/libcroco-0.6.11.tar.xz",
+                    "sha256": "132b528a948586b0dfa05d7e9e059901bca5a3be675b6071a90a90b81ae5a056"
+                }
+            ]
+        },
+        {
+            "name": "librsvg",
+            "config-opts": [
+                "--disable-pixbuf-loader",
+                "--disable-introspection",
+                "--disable-static",
+                "--disable-tools"
+            ],
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.16.tar.xz",
+                    "sha256": "d48bcf6b03fa98f07df10332fb49d8c010786ddca6ab34cbba217684f533ff2e"
+                }
+            ]
+        },
+        {
+            "name": "tuxpaint",
+            "no-autogen": true,
+            "no-parallel-make": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.22/tuxpaint-0.9.22.tar.gz",
+                    "sha256": "8abd932f8e36fad795bba0290c094c9c221e424c4b9aa8c763b7fb3459cb2be3"
+                },
+                {
+                    "type": "patch",
+                    "path": "tuxpaint-bash-completion.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "tuxpaint-Set-flatpak-app-profile.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "tuxpaint-Install-desktop-file-and-icons.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "tuxpaint-Run-fullscreen.patch"
+                },
+                {
+                    "type": "file",
+                    "path": "org.tuxpaint.Tuxpaint.appdata.xml"
+                }
+            ],
+            "post-install": [
+                "mkdir -p /app/share/appdata",
+                "cp org.tuxpaint.Tuxpaint.appdata.xml /app/share/appdata"
+            ]
+        }
+    ]
+}

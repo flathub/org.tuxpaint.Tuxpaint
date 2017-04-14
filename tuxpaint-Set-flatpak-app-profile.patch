@@ -1,0 +1,25 @@
+From a5f47ae23b2a5f00b4ac5135152e1b5a654b8a2b Mon Sep 17 00:00:00 2001
+From: Cosimo Cecchi <cosimoc@gnome.org>
+Date: Sat, 11 Feb 2017 13:20:47 -0800
+Subject: [PATCH 2/3] Set flatpak /app profile
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 51cc780..0b9eb86 100644
+--- a/Makefile
++++ b/Makefile
+@@ -109,7 +109,7 @@ windows_PREFIX:=/usr/local
+ osx_PREFIX:=/usr/local
+ 
+ beos_PREFIX=$(shell finddir B_APPS_DIRECTORY)/TuxPaint
+-linux_PREFIX:=/usr/local
++linux_PREFIX:=/app
+ PREFIX:=$($(OS)_PREFIX)
+ 
+ # Root directory to place files when creating packages.
+-- 
+2.9.3
+
