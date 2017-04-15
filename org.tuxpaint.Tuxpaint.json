@@ -38,6 +38,17 @@
                 {
                     "type": "patch",
                     "path": "sdl-libx11-build.patch"
+                },
+                {
+                    "type": "script",
+                    "path": "autogen.sh",
+                    "commands": [
+                        "sed -i -e 's/.*AM_PATH_ESD.*//' configure.in",
+                        "cp -p /usr/share/automake-*/config.{sub,guess} build-scripts",
+                        "aclocal",
+                        "libtoolize",
+                        "autoconf"
+                    ]
                 }
             ]
         },
