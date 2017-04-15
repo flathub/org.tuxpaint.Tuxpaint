@@ -1,7 +1,7 @@
 {
     "app-id": "org.tuxpaint.Tuxpaint",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.4",
+    "runtime-version": "1.6",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
