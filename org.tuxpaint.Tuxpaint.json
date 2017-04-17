@@ -175,6 +175,7 @@
         {
             "name": "SDL_pango",
             "config-opts": ["--disable-static"],
+            "rm-configure": true,
             "sources": [
                 {
                     "type": "archive",
@@ -184,6 +185,13 @@
                 {
                     "type": "patch",
                     "path": "SDL_Pango-0.1.2-API-adds.patch"
+                },
+                {
+                    "type": "script",
+                    "path": "autogen.sh",
+                    "commands": [
+                        "autoreconf -vfi"
+                    ]
                 }
             ]
         },
