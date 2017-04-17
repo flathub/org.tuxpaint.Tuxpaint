@@ -1,17 +1,6 @@
-From 124d36e7a8ae1beb52ceff0914568a401e0e3a63 Mon Sep 17 00:00:00 2001
-From: Cosimo Cecchi <cosimoc@gnome.org>
-Date: Sat, 11 Feb 2017 13:14:22 -0800
-Subject: [PATCH] Import API Additions
-
----
- src/SDL_Pango.c | 41 ++++++++++++++++++++++++++++-------------
- src/SDL_Pango.h | 16 +++++++++++++++-
- 2 files changed, 43 insertions(+), 14 deletions(-)
-
-diff --git a/src/SDL_Pango.c b/src/SDL_Pango.c
-index 2118cd2..cb4d56c 100644
---- a/src/SDL_Pango.c
-+++ b/src/SDL_Pango.c
+diff -Naupr SDL_Pango-0.1.2.orig/src/SDL_Pango.c SDL_Pango-0.1.2/src/SDL_Pango.c
+--- SDL_Pango-0.1.2.orig/src/SDL_Pango.c	2004-12-10 10:06:33.000000000 +0100
++++ SDL_Pango-0.1.2/src/SDL_Pango.c	2006-09-29 17:42:09.000000000 +0200
 @@ -723,13 +723,8 @@ SDLPango_CopyFTBitmapToSurface(
      SDL_UnlockSurface(surface);
  }
@@ -89,10 +78,9 @@ index 2118cd2..cb4d56c 100644
  }
  
  /*!
-diff --git a/src/SDL_Pango.h b/src/SDL_Pango.h
-index 2433661..1acd96f 100644
---- a/src/SDL_Pango.h
-+++ b/src/SDL_Pango.h
+diff -Naupr SDL_Pango-0.1.2.orig/src/SDL_Pango.h SDL_Pango-0.1.2/src/SDL_Pango.h
+--- SDL_Pango-0.1.2.orig/src/SDL_Pango.h	2004-12-10 10:06:33.000000000 +0100
++++ SDL_Pango-0.1.2/src/SDL_Pango.h	2006-09-29 17:42:09.000000000 +0200
 @@ -109,12 +109,20 @@ typedef enum {
      SDLPANGO_DIRECTION_NEUTRAL	/*! Neutral */
  } SDLPango_Direction;
@@ -115,7 +103,7 @@ index 2433661..1acd96f 100644
  extern DECLSPEC SDLPango_Context* SDLCALL SDLPango_CreateContext();
  
  extern DECLSPEC void SDLCALL SDLPango_FreeContext(
-@@ -157,6 +165,12 @@ extern DECLSPEC void SDLCALL SDLPango_SetMarkup(
+@@ -157,6 +165,12 @@ extern DECLSPEC void SDLCALL SDLPango_Se
      const char *markup,
      int length);
  
@@ -128,6 +116,3 @@ index 2433661..1acd96f 100644
  extern DECLSPEC void SDLCALL SDLPango_SetText(
      SDLPango_Context *context,
      const char *markup,
--- 
-2.9.3
-
