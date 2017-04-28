@@ -27,48 +27,6 @@
         "shared-modules/SDL/SDL_mixer-1.2.12.json",
         "shared-modules/SDL/SDL_ttf-2.0.11.json",
         "shared-modules/SDL/SDL_image-1.2.12.json",
-        {
-            "name": "libdatrie",
-            "config-opts": ["--disable-static"],
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://linux.thai.net/pub/thailinux/software/libthai/libdatrie-0.2.9.tar.xz",
-                    "sha256": "d980713e7ad8e19cf3b54ee0173782b94332af8e7e4e936dde01d2cd72e1da1d"
-                }
-            ]
-        },
-        {
-            "name": "libthai",
-            "config-opts": ["--disable-static"],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://linux.thai.net/pub/thailinux/software/libthai/libthai-0.1.22.tar.xz",
-                    "sha256": "bdb291dcc3a6784e86b1b342ec75005e9ab487f8c1decc7c3e7d18d1bbc9b7b7"
-                }
-            ]
-        },
-        {
-            "name": "pango",
-            "config-opts": [
-                "--disable-introspection",
-                "--disable-static"
-            ],
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/pango/1.40/pango-1.40.3.tar.xz",
-                    "sha256": "abba8b5ce728520c3a0f1535eab19eac3c14aeef7faa5aded90017ceac2711d3"
-                }
-            ]
-        },
         "shared-modules/SDL/SDL_pango-0.1.2.json",
         {
             "name": "fribidi",
@@ -100,20 +58,6 @@
                     "type": "script",
                     "commands": ["autoreconf -vfi"],
                     "dest-filename": "autogen.sh"
-                }
-            ]
-        },
-        {
-            "name": "libcroco",
-            "config-opts": ["--disable-static"],
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libcroco/0.6/libcroco-0.6.11.tar.xz",
-                    "sha256": "132b528a948586b0dfa05d7e9e059901bca5a3be675b6071a90a90b81ae5a056"
                 }
             ]
         },
