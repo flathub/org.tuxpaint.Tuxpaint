@@ -96,6 +96,20 @@
                 "mkdir -p /app/share/appdata",
                 "cp org.tuxpaint.Tuxpaint.appdata.xml /app/share/appdata"
             ]
+        },
+        {
+            "name": "tuxpaint-stamps",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2014-08-23/tuxpaint-stamps-2014.08.23.tar.gz",
+                    "sha256": "d8005d57b08f18b54df5a1baf86f09268278d1252de6b193119713f265e61466"
+                }
+            ],
+            "build-commands": [
+                "make PREFIX=/app install-all"
+            ]
         }
     ]
 }
