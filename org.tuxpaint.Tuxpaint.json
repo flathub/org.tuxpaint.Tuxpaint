@@ -1,7 +1,7 @@
 {
     "app-id": "org.tuxpaint.Tuxpaint",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -28,19 +28,6 @@
         "shared-modules/SDL/SDL_ttf-2.0.11.json",
         "shared-modules/SDL/SDL_image-1.2.12.json",
         "shared-modules/SDL/SDL_pango-0.1.2.json",
-        {
-            "name": "fribidi",
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://fribidi.org/download/fribidi-0.19.7.tar.bz2",
-                    "sha256": "08222a6212bbc2276a2d55c3bf370109ae4a35b689acbc66571ad2a670595a8e"
-                }
-            ]
-        },
         {
             "name": "libpaper",
             "config-opts": ["--disable-static"],
