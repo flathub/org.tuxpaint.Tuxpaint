@@ -7,6 +7,8 @@ SentUpstream: 2014-09-18
 <application>
   <id type="desktop">tuxpaint.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>Tux Paint</name>
   <summary>A drawing program for children</summary>
   <description>
     <p>
@@ -67,5 +69,5 @@ SentUpstream: 2014-09-18
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-  <updatecontact>tuxpaint-devel@lists.sourceforge.net</updatecontact>
+  <update_contact>tuxpaint-devel@lists.sourceforge.net</update_contact>
 </application>
