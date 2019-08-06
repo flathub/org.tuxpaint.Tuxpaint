@@ -29,7 +29,14 @@ SentUpstream: 2014-09-18
     <screenshot>http://tuxpaint.org/screenshots/example_space.png</screenshot>
   </screenshots>
   <releases>
-		<release version="0.922" date="2014-08-23"/>
+		<release version="0.9.23" date="2018-09-02">
+		<description>
+		  <p>New in this version are a "color picker", which allows any color within a drawing to be chosen using the pointer, and a set of three-, four-, and five-pointed star shapes.</p>
+
+<p>The latest version also incorporates a number of new translations, bringing the number of supported languages up to nearly 130: Bengali, Bodo, Dogri, Kabyle, Urdu, and Devanagari and Perso-Arabic variations of Kashmiri and Sindhi. Thirty other translations have been updated, as well.</p>
+                </description>
+		</release>
+		<release version="0.9.22" date="2014-08-23"/>
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
