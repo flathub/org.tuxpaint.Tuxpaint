@@ -11,6 +11,15 @@ diff --git a/Makefile b/Makefile
 index 51cc780..0b9eb86 100644
 --- a/Makefile
 +++ b/Makefile
+@@ -104,7 +104,7 @@
+ windows_ARCH_LDFLAGS:=
+ osx_ARCH_LDFLAGS:=-L/opt/local/lib
+ beos_ARCH_LDFLAGS:=
+-linux_ARCH_LDFLAGS:=
++linux_ARCH_LDFLAGS:=-L/app/lib
+ ARCH_LDFLAGS:=$($(OS)_ARCH_LDFLAGS)
+ LDFLAGS:=$(ARCH_LDFLAGS)
+ 
 @@ -109,7 +109,7 @@ windows_PREFIX:=/usr/local
  osx_PREFIX:=/usr/local
  

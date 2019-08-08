@@ -1,7 +1,7 @@
 {
     "app-id": "org.tuxpaint.Tuxpaint",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -29,19 +29,6 @@
         "shared-modules/SDL/SDL_image-1.2.12.json",
         "shared-modules/SDL/SDL_pango-0.1.2.json",
         {
-            "name": "fribidi",
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://fribidi.org/download/fribidi-0.19.7.tar.bz2",
-                    "sha256": "08222a6212bbc2276a2d55c3bf370109ae4a35b689acbc66571ad2a670595a8e"
-                }
-            ]
-        },
-        {
             "name": "libpaper",
             "config-opts": ["--disable-static"],
             "cleanup": [
@@ -68,8 +55,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.22/tuxpaint-0.9.22.tar.gz",
-                    "sha256": "8abd932f8e36fad795bba0290c094c9c221e424c4b9aa8c763b7fb3459cb2be3"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.23/tuxpaint-0.9.23.tar.gz",
+                    "sha256": "349919c44e0fa252581be6e3242251fb62d20a82c971e99be96d648462bf6926"
                 },
                 {
                     "type": "patch",
@@ -103,8 +90,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2014-08-23/tuxpaint-stamps-2014.08.23.tar.gz",
-                    "sha256": "d8005d57b08f18b54df5a1baf86f09268278d1252de6b193119713f265e61466"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2018-09-01/tuxpaint-stamps-2018.09.01.tar.gz",
+                    "sha256": "d78f55e7fde6abc3fb1a79e6fed0114a2c0ad2edff7ee5f8db43fa23e61079ea"
                 }
             ],
             "build-commands": [

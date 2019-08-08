@@ -1,19 +1,8 @@
-From e799a32454298ab339af4d23e938d88f1f1d100b Mon Sep 17 00:00:00 2001
-From: Cosimo Cecchi <cosimoc@gnome.org>
-Date: Sat, 11 Feb 2017 13:43:22 -0800
-Subject: [PATCH 3/3] Install desktop file and icons
-
----
- Makefile | 118 ++++++++++++++++++++++++++++++++++-----------------------------
- 1 file changed, 63 insertions(+), 55 deletions(-)
-
-diff --git a/Makefile b/Makefile
-index 0b9eb86..bd62925 100644
---- a/Makefile
-+++ b/Makefile
-@@ -172,6 +172,13 @@ GNOME_PREFIX:=$(shell gnome-config --prefix 2> /dev/null)
- KDE_PREFIX:=$(shell kde-config --install apps --expandvars 2> /dev/null)
- KDE_ICON_PREFIX:=$(shell kde-config --install icon --expandvars 2> /dev/null)
+--- a/Makefile.orig	2019-08-06 13:48:31.516596275 +0100
++++ b/Makefile	2019-08-06 15:31:06.187597814 +0100
+@@ -197,6 +197,13 @@
+ KDE_PREFIX:=$(shell kde-config --install xdgdata-apps --expandvars 2> /dev/null)
+ KDE_ICON_PREFIX:=$(shell kde4-config --install icon --expandvars 2> /dev/null)
  
 +ifneq ($(KDE_ICON_PREFIX),)
 +  XDG_ICON_PREFIX:=$(KDE_ICON_PREFIX)
@@ -25,16 +14,16 @@ index 0b9eb86..bd62925 100644
  # Maemo flag
  MAEMOFLAG:=
  
-@@ -439,7 +446,7 @@ trans:
+@@ -467,7 +474,7 @@
  windows_ARCH_INSTALL:=
- osx_ARCH_INSTALL:=
+ osx_ARCH_INSTALL:=install-macbundle TuxPaint.dmg
  beos_ARCH_INSTALL:=install-haiku
--linux_ARCH_INSTALL:=install-gnome install-kde install-kde-icons
-+linux_ARCH_INSTALL:=install-gnome install-kde install-xdg-icons
+-linux_ARCH_INSTALL:=install-kde install-kde-icons
++linux_ARCH_INSTALL:=install-kde install-xdg-icons
  ARCH_INSTALL:=$($(OS)_ARCH_INSTALL)
  
  # "make install" installs all of the various parts
-@@ -581,17 +588,15 @@ uninstall:	uninstall-i18n
+@@ -614,17 +621,15 @@
  	fi
  	-rm $(ICON_PREFIX)/tuxpaint.png
  	-rm $(X11_ICON_PREFIX)/tuxpaint.xpm
@@ -61,35 +50,24 @@ index 0b9eb86..bd62925 100644
  	-rm $(BIN_PREFIX)/tuxpaint
  	-rm $(BIN_PREFIX)/tuxpaint-import
  	-rm -r $(DATA_PREFIX)
-@@ -719,18 +724,23 @@ echo-install-example-templates:
- install-example-templates: echo-install-example-templates install-example-template-dirs $(INSTALLED_TEMPLATES)
- 
- 
--# Install a launcher icon in the Gnome menu
-+# Install a launcher icon in the Gnome/xdg menu
- .PHONY: install-gnome
- install-gnome:
+@@ -784,55 +789,58 @@
+ .PHONY: install-kde
+ install-kde:
  	@echo
--	@echo "...Installing launcher icon into GNOME..."
- 	@if [ "x$(GNOME_PREFIX)" != "x" ]; then \
-+	 echo "...Installing launcher icon into GNOME..."; \
- 	 install -d $(DESTDIR)$(GNOME_PREFIX)/share/pixmaps; \
- 	 cp data/images/icon.png $(DESTDIR)/$(GNOME_PREFIX)/share/pixmaps/tuxpaint.png; \
- 	 chmod 644 $(DESTDIR)$(GNOME_PREFIX)/share/pixmaps/tuxpaint.png; \
- 	 install -d $(DESTDIR)$(GNOME_PREFIX)/share/applications; \
- 	 cp src/tuxpaint.desktop $(DESTDIR)$(GNOME_PREFIX)/share/applications/; \
- 	 chmod 644 $(DESTDIR)$(GNOME_PREFIX)/share/applications/tuxpaint.desktop; \
+-	@echo "...Installing launcher icon into KDE..."
+ 	@if [ "x$(KDE_PREFIX)" != "x" ]; then \
++	  echo "...Installing launcher icon into KDE..."; \
+ 	  install -d $(DESTDIR)$(KDE_PREFIX); \
+ 	  cp src/tuxpaint.desktop $(DESTDIR)$(KDE_PREFIX)/; \
+ 	  chmod 644 $(DESTDIR)$(KDE_PREFIX)/tuxpaint.desktop; \
++	  kbuildsycoca4; \
 +	else \
-+	 echo "...Installing launcher into XDG..."; \
-+	 install -d $(DESTDIR)$(PREFIX)/share/applications; \
-+	 cp src/tuxpaint.desktop $(DESTDIR)$(PREFIX)/share/applications/; \
-+	 chmod 644 $(DESTDIR)$(PREFIX)/share/applications/tuxpaint.desktop; \
++	  echo "...Installing launcher into XDG..."; \
++	  install -d $(DESTDIR)$(PREFIX)/share/applications; \
++	  cp src/tuxpaint.desktop $(DESTDIR)$(PREFIX)/share/applications/; \
++	  chmod 644 $(DESTDIR)$(PREFIX)/share/applications/tuxpaint.desktop; \
  	fi
- 
- 
-@@ -770,47 +780,45 @@ install-kde:
- 	  chmod 644 $(DESTDIR)$(KDE_PREFIX)/Graphics/tuxpaint.desktop; \
- 	fi
+-	kbuildsycoca4
  
 -.PHONY: install-kde-icons
 -install-kde-icons:
@@ -173,7 +151,4 @@ index 0b9eb86..bd62925 100644
 +        chmod 644 $(XDG_ICON_PREFIX)/hicolor/16x16/apps/tuxpaint.png; \
  
  
- # Install the PNG icon (for GNOME, KDE, etc.)
--- 
-2.9.3
-
+ # Install the PNG icon (for KDE desktop, etc.)
