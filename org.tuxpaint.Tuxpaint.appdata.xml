@@ -31,6 +31,10 @@ SentUpstream: 2014-09-18
     <screenshot>http://tuxpaint.org/screenshots/example_space.png</screenshot>
   </screenshots>
   <releases>
+    <release version="0.9.24" date="2020-05-31">
+      <p>The latest version has promoted the "Fill" tool, previously found under the "Magic" section of Tux Paint, to the main toolbar, where it's easier to find. It also includes some performance improvements during start-up and when bringing up the "New" drawing dialog. The solid background colors can also be placed at the end of that dialog, allowing emphasis of template images.</p>
+      <p>Tux Paint also now makes it possible to disable stereo sound, which can benefit users with a hearing impairment, or in situations where only one speaker is available.</p>
+    </release>
 		<release version="0.9.23" date="2018-09-02">
 		<description>
 		  <p>New in this version are a "color picker", which allows any color within a drawing to be chosen using the pointer, and a set of three-, four-, and five-pointed star shapes.</p>
