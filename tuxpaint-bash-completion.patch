@@ -1,4 +1,4 @@
-From ed66f579acc4eb7a94dcff80dd6f4fb19abf0581 Mon Sep 17 00:00:00 2001
+From 438f163e9db4519af02839cf4cd8c3055b05776c Mon Sep 17 00:00:00 2001
 From: Cosimo Cecchi <cosimoc@gnome.org>
 Date: Sat, 11 Feb 2017 14:00:53 -0800
 Subject: [PATCH 1/3] build: don't install bash completion in /etc unless
@@ -9,10 +9,10 @@ Subject: [PATCH 1/3] build: don't install bash completion in /etc unless
  1 file changed, 5 insertions(+), 1 deletion(-)
 
 diff --git a/Makefile b/Makefile
-index 730ed91..51cc780 100644
+index 13841f57..ec8007b8 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -148,7 +148,11 @@ MAN_PREFIX:=$(DESTDIR)$(PREFIX)/share/man
+@@ -172,7 +172,11 @@ MAN_PREFIX:=$(DESTDIR)$(PREFIX)/share/man
  DEVMAN_PREFIX:=$(DESTDIR)$(PREFIX)/share/man
  
  # BASH tab-completion file:
@@ -26,5 +26,5 @@ index 730ed91..51cc780 100644
  # 'System-wide' Config file:
  ifeq ($(PREFIX),/usr)
 -- 
-2.9.3
+2.26.2
 
