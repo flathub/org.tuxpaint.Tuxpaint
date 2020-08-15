@@ -71,17 +71,18 @@
                     "path": "tuxpaint-Install-desktop-file-and-icons.patch"
                 },
                 {
-                    "type": "patch",
-                    "path": "tuxpaint-Run-fullscreen.patch"
+                    "type": "file",
+                    "path": "org.tuxpaint.Tuxpaint.appdata.xml"
                 },
                 {
                     "type": "file",
-                    "path": "org.tuxpaint.Tuxpaint.appdata.xml"
+                    "path": "tuxpaint.conf"
                 }
             ],
             "post-install": [
                 "mkdir -p /app/share/appdata",
-                "cp org.tuxpaint.Tuxpaint.appdata.xml /app/share/appdata"
+                "cp org.tuxpaint.Tuxpaint.appdata.xml /app/share/appdata",
+                "install -m644 -Dt /app/etc/tuxpaint tuxpaint.conf"
             ]
         },
         {
