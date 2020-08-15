@@ -48,6 +48,7 @@
                 }
             ]
         },
+        "ImageMagick.json",
         {
             "name": "tuxpaint",
             "no-autogen": true,
