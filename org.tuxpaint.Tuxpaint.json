@@ -1,8 +1,8 @@
 {
     "app-id": "org.tuxpaint.Tuxpaint",
-    "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
-    "sdk": "org.freedesktop.Sdk",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.36",
+    "sdk": "org.gnome.Sdk",
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -93,6 +93,19 @@
             ],
             "build-commands": [
                 "make PREFIX=/app install-all"
+            ]
+        },
+        {
+            "name": "lpr",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "lpr"
+                }
+            ],
+            "build-commands": [
+                "install lpr /app/bin/lpr"
             ]
         }
     ]
