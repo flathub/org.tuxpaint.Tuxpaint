@@ -1,7 +1,7 @@
 {
     "app-id": "org.tuxpaint.Tuxpaint",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -38,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://http.debian.net/debian/pool/main/libp/libpaper/libpaper_1.1.24+nmu5.tar.gz",
-                    "sha256": "e29deda4cd7350189c71af0925cbf4a4473f9841d1419a922e1e8ff1954db1f2"
+                    "url": "http://http.debian.net/debian/pool/main/libp/libpaper/libpaper_1.1.28.tar.gz",
+                    "sha256": "c8bb946ec93d3c2c72bbb1d7257e90172a22a44a07a07fb6b802a5bb2c95fddc"
                 },
                 {
                     "type": "script",
@@ -48,6 +48,7 @@
                 }
             ]
         },
+        "ImageMagick.json",
         {
             "name": "tuxpaint",
             "no-autogen": true,
@@ -55,33 +56,29 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.23/tuxpaint-0.9.23.tar.gz",
-                    "sha256": "349919c44e0fa252581be6e3242251fb62d20a82c971e99be96d648462bf6926"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.24/tuxpaint-0.9.24.tar.gz",
+                    "sha256": "8762572f55f335aaa6329106282bebf171e7305f796fa7b5aad3cd78c5a3a11a"
                 },
                 {
                     "type": "patch",
-                    "path": "tuxpaint-bash-completion.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "tuxpaint-Set-flatpak-app-profile.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "tuxpaint-Install-desktop-file-and-icons.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "tuxpaint-Run-fullscreen.patch"
+                    "paths": [
+                        "tuxpaint-bash-completion.patch",
+                        "tuxpaint-Set-flatpak-app-profile.patch",
+                        "tuxpaint-Install-desktop-file-and-icons.patch"
+                    ]
                 },
                 {
                     "type": "file",
                     "path": "org.tuxpaint.Tuxpaint.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "tuxpaint.conf"
                 }
             ],
             "post-install": [
-                "mkdir -p /app/share/appdata",
-                "cp org.tuxpaint.Tuxpaint.appdata.xml /app/share/appdata"
+                "install -m644 -Dt /app/share/appdata org.tuxpaint.Tuxpaint.appdata.xml",
+                "install -m644 -Dt /app/etc/tuxpaint tuxpaint.conf"
             ]
         },
         {
@@ -90,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2018-09-01/tuxpaint-stamps-2018.09.01.tar.gz",
-                    "sha256": "d78f55e7fde6abc3fb1a79e6fed0114a2c0ad2edff7ee5f8db43fa23e61079ea"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2020-05-29/tuxpaint-stamps-2020.05.29.tar.gz",
+                    "sha256": "60d04f2c7f0bc60f198da40393d5a8824f142a72af04d7a5af05ad0f0f0163e9"
                 }
             ],
             "build-commands": [
