@@ -55,6 +55,11 @@
             "no-parallel-make": true,
             "sources": [
                 {
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8901,
+                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
+                    },
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.24/tuxpaint-0.9.24.tar.gz",
                     "sha256": "8762572f55f335aaa6329106282bebf171e7305f796fa7b5aad3cd78c5a3a11a"
@@ -86,6 +91,7 @@
             "buildsystem": "simple",
             "sources": [
                 {
+                    "//": "TODO: add x-checker-data. Unfortunately the version number appears twice, once with dashes and once with dots.",
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2020-05-29/tuxpaint-stamps-2020.05.29.tar.gz",
                     "sha256": "60d04f2c7f0bc60f198da40393d5a8824f142a72af04d7a5af05ad0f0f0163e9"
