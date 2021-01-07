@@ -66,8 +66,8 @@
                         "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.24/tuxpaint-0.9.24.tar.gz",
-                    "sha256": "8762572f55f335aaa6329106282bebf171e7305f796fa7b5aad3cd78c5a3a11a"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.25/tuxpaint-0.9.25.tar.gz",
+                    "sha256": "c1185b7ba97701ae48639ade3e55488bd695a919a7b5b38f5b2ab0df93b6e19d"
                 },
                 {
                     "type": "patch",
@@ -98,8 +98,8 @@
                 {
                     "//": "TODO: add x-checker-data. Unfortunately the version number appears twice, once with dashes and once with dots.",
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2020-05-29/tuxpaint-stamps-2020.05.29.tar.gz",
-                    "sha256": "60d04f2c7f0bc60f198da40393d5a8824f142a72af04d7a5af05ad0f0f0163e9"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2020-12-27/tuxpaint-stamps-2020.12.27.tar.gz",
+                    "sha256": "df53bbd866d4b045e8148f7271efd7d4c3e689f4511796ab31d4b95a98733235"
                 }
             ],
             "build-commands": [
