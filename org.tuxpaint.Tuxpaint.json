@@ -55,6 +55,17 @@
         },
         "ImageMagick.json",
         {
+            "name": "libimagequant",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/ImageOptim/libimagequant",
+                    "tag": "2.13.1",
+                    "commit": "5ea4f8a3c3186fa83e1e7c08c9238e071eedb95f"
+                }
+            ]
+        },
+        {
             "name": "tuxpaint",
             "no-autogen": true,
             "no-parallel-make": true,
