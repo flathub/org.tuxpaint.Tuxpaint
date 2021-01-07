@@ -5,6 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
+        "--filesystem=xdg-pictures/TuxPaint:create",
         "--share=ipc",
         "--socket=x11",
         "--socket=pulseaudio",
