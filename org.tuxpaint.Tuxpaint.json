@@ -70,6 +70,14 @@
             "name": "tuxpaint",
             "no-autogen": true,
             "no-parallel-make": true,
+            "make-args": [
+                "LDFLAGS=-L/app/lib",
+                "PREFIX=/app"
+            ],
+            "make-install-args": [
+                "LDFLAGS=-L/app/lib",
+                "PREFIX=/app"
+            ],
             "sources": [
                 {
                     "x-checker-data": {
@@ -85,7 +93,6 @@
                     "type": "patch",
                     "paths": [
                         "tuxpaint-bash-completion.patch",
-                        "tuxpaint-Set-flatpak-app-profile.patch",
                         "tuxpaint-Install-desktop-file-and-icons.patch"
                     ]
                 },
