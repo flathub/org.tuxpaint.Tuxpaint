@@ -19,7 +19,8 @@
         "/share/aclocal",
         "/share/gtk-doc",
         "/share/man",
-        "*.la", "*.a"
+        "*.la",
+        "*.a"
     ],
     "modules": [
         "shared-modules/SDL/SDL-1.2.15.json",
@@ -30,7 +31,9 @@
         "shared-modules/SDL/SDL_pango-0.1.2.json",
         {
             "name": "libpaper",
-            "config-opts": ["--disable-static"],
+            "config-opts": [
+                "--disable-static"
+            ],
             "cleanup": [
                 "/bin",
                 "/sbin"
@@ -43,7 +46,9 @@
                 },
                 {
                     "type": "script",
-                    "commands": ["autoreconf -vfi"],
+                    "commands": [
+                        "autoreconf -vfi"
+                    ],
                     "dest-filename": "autogen.sh"
                 }
             ]
