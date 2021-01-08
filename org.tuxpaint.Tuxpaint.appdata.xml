@@ -7,7 +7,7 @@ SentUpstream: 2014-09-18
 <application>
   <id type="desktop">tuxpaint.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0+</project_license>
+  <project_license>GPL-3.0+</project_license>
   <name>Tux Paint</name>
   <summary>A drawing program for children</summary>
   <description>
@@ -31,6 +31,12 @@ SentUpstream: 2014-09-18
     <screenshot>http://tuxpaint.org/screenshots/example_space.png</screenshot>
   </screenshots>
   <releases>
+    <release version="0.9.25" date="2020-12-30">
+      <p>A major improvement has been made to the Shapes tool, which now provides options to choose whether shapes are drawn from the center or a corner, making it easier to use in any situation.</p>
+      <p>The on-screen keyboard, an accessibility feature optionally available when using the Text and Label tools, now appears larger on bigger displays; helpful for users of coarser input devices, such as eye-tracking systems.</p>
+      <p>The Eraser tool adds new, smaller eraser sizes, and applies smoother, contiguous strokes when the pointer is moved quickly.</p>
+      <p>Finally, this newest version adds options to export individual drawings and GIF animations, making it easy to share pictures, cartoons, and slideshows with others.</p>
+    </release>
     <release version="0.9.24" date="2020-05-31">
       <p>The latest version has promoted the "Fill" tool, previously found under the "Magic" section of Tux Paint, to the main toolbar, where it's easier to find. It also includes some performance improvements during start-up and when bringing up the "New" drawing dialog. The solid background colors can also be placed at the end of that dialog, allowing emphasis of template images.</p>
       <p>Tux Paint also now makes it possible to disable stereo sound, which can benefit users with a hearing impairment, or in situations where only one speaker is available.</p>
