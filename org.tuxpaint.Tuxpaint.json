@@ -118,7 +118,7 @@
                     "//": "TODO: add x-checker-data. Unfortunately the version number appears twice, once with dashes and once with dots.",
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2020-12-27/tuxpaint-stamps-2020.12.27.tar.gz",
-                    "sha256": "df53bbd866d4b045e8148f7271efd7d4c3e689f4511796ab31d4b95a98733235"
+                    "sha256": "b31b77db47fb16b20092d7b7d90e4ea6733648b845851277dfe7f9038d0be946"
                 }
             ],
             "build-commands": [
