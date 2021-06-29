@@ -31,24 +31,35 @@ SentUpstream: 2014-09-18
     <screenshot>http://tuxpaint.org/screenshots/example_space.png</screenshot>
   </screenshots>
   <releases>
+    <release version="0.9.26" date="2021-06-26">
+      <description>
+        <p>Tux Paint's Fill tool now offers options to fill an area with color gradients. The "Radial" fill creates a circular gradient centered around the mouse click, while the "Linear" fill allows the interactive creation of gradients at different angles and sizes.</p>
+        <p>New Magic tools have been added to Tux Paint: "Pixels" makes it easier to create retro-gaming style pixel art, "Checkerboard" fills the entire canvas with a check pattern, and "Clone" allows duplicating parts of the picture via brush strokes.</p>
+        <p>Tux Paint's user documentation has been overhauled, making localization easier. Parties interested in helping with localization are encouraged to contact the Tux Paint team.</p>
+        <p>Finally, a new pair of accessibility options have been added. The entire user interface can now be enlarged benefiting users with impaired vision, and making the program more suitable to very high density displays. This feature, along with a new option to re-organize the color palette, can also be helpful to users of coarse input devices, such as eye-gaze tracking systems.</p>
+      </description>
+    </release>
     <release version="0.9.25" date="2020-12-30">
-      <p>A major improvement has been made to the Shapes tool, which now provides options to choose whether shapes are drawn from the center or a corner, making it easier to use in any situation.</p>
-      <p>The on-screen keyboard, an accessibility feature optionally available when using the Text and Label tools, now appears larger on bigger displays; helpful for users of coarser input devices, such as eye-tracking systems.</p>
-      <p>The Eraser tool adds new, smaller eraser sizes, and applies smoother, contiguous strokes when the pointer is moved quickly.</p>
-      <p>Finally, this newest version adds options to export individual drawings and GIF animations, making it easy to share pictures, cartoons, and slideshows with others.</p>
+      <description>
+        <p>A major improvement has been made to the Shapes tool, which now provides options to choose whether shapes are drawn from the center or a corner, making it easier to use in any situation.</p>
+        <p>The on-screen keyboard, an accessibility feature optionally available when using the Text and Label tools, now appears larger on bigger displays; helpful for users of coarser input devices, such as eye-tracking systems.</p>
+        <p>The Eraser tool adds new, smaller eraser sizes, and applies smoother, contiguous strokes when the pointer is moved quickly.</p>
+        <p>Finally, this newest version adds options to export individual drawings and GIF animations, making it easy to share pictures, cartoons, and slideshows with others.</p>
+      </description>
     </release>
     <release version="0.9.24" date="2020-05-31">
-      <p>The latest version has promoted the "Fill" tool, previously found under the "Magic" section of Tux Paint, to the main toolbar, where it's easier to find. It also includes some performance improvements during start-up and when bringing up the "New" drawing dialog. The solid background colors can also be placed at the end of that dialog, allowing emphasis of template images.</p>
-      <p>Tux Paint also now makes it possible to disable stereo sound, which can benefit users with a hearing impairment, or in situations where only one speaker is available.</p>
+      <description>
+        <p>The latest version has promoted the "Fill" tool, previously found under the "Magic" section of Tux Paint, to the main toolbar, where it's easier to find. It also includes some performance improvements during start-up and when bringing up the "New" drawing dialog. The solid background colors can also be placed at the end of that dialog, allowing emphasis of template images.</p>
+        <p>Tux Paint also now makes it possible to disable stereo sound, which can benefit users with a hearing impairment, or in situations where only one speaker is available.</p>
+      </description>
     </release>
-		<release version="0.9.23" date="2018-09-02">
-		<description>
-		  <p>New in this version are a "color picker", which allows any color within a drawing to be chosen using the pointer, and a set of three-, four-, and five-pointed star shapes.</p>
-
-<p>The latest version also incorporates a number of new translations, bringing the number of supported languages up to nearly 130: Bengali, Bodo, Dogri, Kabyle, Urdu, and Devanagari and Perso-Arabic variations of Kashmiri and Sindhi. Thirty other translations have been updated, as well.</p>
-                </description>
-		</release>
-		<release version="0.9.22" date="2014-08-23"/>
+    <release version="0.9.23" date="2018-09-02">
+      <description>
+        <p>New in this version are a "color picker", which allows any color within a drawing to be chosen using the pointer, and a set of three-, four-, and five-pointed star shapes.</p>
+        <p>The latest version also incorporates a number of new translations, bringing the number of supported languages up to nearly 130: Bengali, Bodo, Dogri, Kabyle, Urdu, and Devanagari and Perso-Arabic variations of Kashmiri and Sindhi. Thirty other translations have been updated, as well.</p>
+      </description>
+    </release>
+    <release version="0.9.22" date="2014-08-23"/>
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
