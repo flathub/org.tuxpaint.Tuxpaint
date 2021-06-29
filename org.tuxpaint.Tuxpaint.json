@@ -118,8 +118,8 @@
                 {
                     "//": "TODO: add x-checker-data. https://github.com/flathub/flatpak-external-data-checker/issues/196",
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2020-12-27/tuxpaint-stamps-2020.12.27.tar.gz",
-                    "sha256": "df53bbd866d4b045e8148f7271efd7d4c3e689f4511796ab31d4b95a98733235"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint-stamps/2021-06-28/tuxpaint-stamps-2021.06.28.tar.gz",
+                    "sha256": "1e849c5fb8535608a49d7160936602e443505bd202ffc378d649f11053e817cb"
                 }
             ],
             "build-commands": [
