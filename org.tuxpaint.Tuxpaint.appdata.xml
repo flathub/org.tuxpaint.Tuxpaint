@@ -31,6 +31,14 @@ SentUpstream: 2014-09-18
     <screenshot>http://tuxpaint.org/screenshots/example_space.png</screenshot>
   </screenshots>
   <releases>
+    <release version="0.9.26" date="2021-06-26">
+      <description>
+        <p>Tux Paint's Fill tool now offers options to fill an area with color gradients. The "Radial" fill creates a circular gradient centered around the mouse click, while the "Linear" fill allows the interactive creation of gradients at different angles and sizes.</p>
+        <p>New Magic tools have been added to Tux Paint: "Pixels" makes it easier to create retro-gaming style pixel art, "Checkerboard" fills the entire canvas with a check pattern, and "Clone" allows duplicating parts of the picture via brush strokes.</p>
+        <p>Tux Paint's user documentation has been overhauled, making localization easier. Parties interested in helping with localization are encouraged to contact the Tux Paint team.</p>
+        <p>Finally, a new pair of accessibility options have been added. The entire user interface can now be enlarged benefiting users with impaired vision, and making the program more suitable to very high density displays. This feature, along with a new option to re-organize the color palette, can also be helpful to users of coarse input devices, such as eye-gaze tracking systems.</p>
+      </description>
+    </release>
     <release version="0.9.25" date="2020-12-30">
       <description>
         <p>A major improvement has been made to the Shapes tool, which now provides options to choose whether shapes are drawn from the center or a corner, making it easier to use in any situation.</p>
