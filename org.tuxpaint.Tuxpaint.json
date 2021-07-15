@@ -88,7 +88,7 @@
                     },
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.26/tuxpaint-0.9.26.tar.gz",
-                    "sha256": "4aa83eb2e67bfc7e3493366d0ea231da46b9e6a9c552bf267ec868241fffa8f1"
+                    "sha256": "251a85b3bac687974f360d3796048c20ded3bf0bd69e0d1cfd1db23d013f89ed"
                 },
                 {
                     "type": "patch",
