@@ -91,4 +91,13 @@ SentUpstream: 2014-09-18
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <update_contact>tuxpaint-devel@lists.sourceforge.net</update_contact>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+    <display_length compare="ge">medium</display_length>
+  </recommends>
+  <requires>
+    <display_length compare="ge">small</display_length>
+  </requires>
 </application>
