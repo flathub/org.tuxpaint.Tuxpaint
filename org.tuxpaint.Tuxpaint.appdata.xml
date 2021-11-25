@@ -38,6 +38,7 @@ SentUpstream: 2014-09-18
     <screenshot>http://tuxpaint.org/screenshots/example_space.png</screenshot>
   </screenshots>
   <releases>
+    <release version="0.9.27" date="2021-11-25"/>
     <release version="0.9.26" date="2021-06-26">
       <description>
         <p>Tux Paint's Fill tool now offers options to fill an area with color gradients. The "Radial" fill creates a circular gradient centered around the mouse click, while the "Linear" fill allows the interactive creation of gradients at different angles and sizes.</p>
