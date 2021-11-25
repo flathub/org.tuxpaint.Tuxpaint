@@ -38,7 +38,14 @@ SentUpstream: 2014-09-18
     <screenshot>http://tuxpaint.org/screenshots/example_space.png</screenshot>
   </screenshots>
   <releases>
-    <release version="0.9.27" date="2021-11-25"/>
+    <release version="0.9.27" date="2021-11-25">
+      <description>
+        <p>Tux Paint's Paint and Line tools now support brushes that rotate based on the angle of the stroke. This new rotation feature, as well as the older directional and animated brush features, are now visually indicated by the brush shape selector. Additionally, the Fill tool now offers a freehand painting mode for interactively coloring within a confined area.</p>
+        <p>Six new Magic tools have been added to Tux Paint. Panels shrinks and duplicates the drawing into a 2-by-2 grid, which is useful for making four-panel comics. Opposite produces complementary colors. Lightning interactively draws a lightning bolt. Reflection creates a lake-like reflection on the drawing. Stretch stretches and squashes the picture like a fun-house mirror. Lastly, Smooth Rainbow provides a more gradual variation of Tux Paint's classic Rainbow tool.</p>
+        <p>A number of existing Magic tools have been updated, as well. Improvements were made to Halftone, which simulates photographs on newsprint; Cartoon, which makes an image look like a cartoon drawing; and TV, which simulates a television screen. Additionally, Cartoon and Halftone, along with Blocks, Chalk, and Emboss, now offer the ability to alter the entire image at once!</p>
+        <p>Finally, Magic tools are now grouped into collections of similar effects — painting, distorts, color filters, picture warps, pattern painting, artistic, and picture decorations — making it easier to find the tool you need.</p>
+      </description>
+    </release>
     <release version="0.9.26" date="2021-06-26">
       <description>
         <p>Tux Paint's Fill tool now offers options to fill an area with color gradients. The "Radial" fill creates a circular gradient centered around the mouse click, while the "Linear" fill allows the interactive creation of gradients at different angles and sizes.</p>
