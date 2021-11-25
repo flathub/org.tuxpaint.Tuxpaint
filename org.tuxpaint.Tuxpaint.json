@@ -30,6 +30,7 @@
         "shared-modules/SDL/SDL_ttf-2.0.11.json",
         "shared-modules/SDL/SDL_image-1.2.12.json",
         "shared-modules/SDL/SDL_pango-0.1.2.json",
+        "SDL_gfx-2.0.25.json",
         {
             "name": "libpaper",
             "config-opts": [
