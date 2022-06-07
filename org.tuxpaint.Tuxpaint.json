@@ -85,11 +85,11 @@
                         "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8901,
-                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
+                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}-sdl1.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.27/tuxpaint-0.9.27.tar.gz",
-                    "sha256": "ab2b80e89df88228cd0ec0a6c90b49d543cb157aa38fb90cbd3a29f00140557a"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.28/tuxpaint-0.9.28-sdl1.tar.gz",
+                    "sha256": "6f846ef46ab219fda3326336e2ccc65cedaf6d2c42c2f3e603ab601145a1868b"
                 },
                 {
                     "type": "patch",
