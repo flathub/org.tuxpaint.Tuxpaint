@@ -100,7 +100,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "org.tuxpaint.Tuxpaint.appdata.xml"
+                    "path": "org.tuxpaint.Tuxpaint.metainfo.xml"
                 },
                 {
                     "type": "file",
@@ -108,7 +108,7 @@
                 }
             ],
             "post-install": [
-                "install -m644 -Dt /app/share/appdata org.tuxpaint.Tuxpaint.appdata.xml",
+                "install -m644 -Dt /app/share/metainfo org.tuxpaint.Tuxpaint.metainfo.xml",
                 "install -m644 -Dt /app/etc/tuxpaint tuxpaint.conf"
             ]
         },
