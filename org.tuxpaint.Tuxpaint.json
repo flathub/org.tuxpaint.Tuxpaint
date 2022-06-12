@@ -85,11 +85,11 @@
                         "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8901,
-                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
+                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}-sdl1.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.27/tuxpaint-0.9.27.tar.gz",
-                    "sha256": "ab2b80e89df88228cd0ec0a6c90b49d543cb157aa38fb90cbd3a29f00140557a"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.28/tuxpaint-0.9.28-sdl1.tar.gz",
+                    "sha256": "6f846ef46ab219fda3326336e2ccc65cedaf6d2c42c2f3e603ab601145a1868b"
                 },
                 {
                     "type": "patch",
@@ -100,7 +100,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "org.tuxpaint.Tuxpaint.appdata.xml"
+                    "path": "org.tuxpaint.Tuxpaint.metainfo.xml"
                 },
                 {
                     "type": "file",
@@ -108,7 +108,7 @@
                 }
             ],
             "post-install": [
-                "install -m644 -Dt /app/share/appdata org.tuxpaint.Tuxpaint.appdata.xml",
+                "install -m644 -Dt /app/share/metainfo org.tuxpaint.Tuxpaint.metainfo.xml",
                 "install -m644 -Dt /app/etc/tuxpaint tuxpaint.conf"
             ]
         },
@@ -123,8 +123,8 @@
                         "pattern": "(https?://.*/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2021-11-25/tuxpaint-stamps-2021.11.25.tar.gz",
-                    "sha256": "cb55ee21b2d25b440ee216acfab0bb8d906af1c99adbc77e8db11eec30589d52"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2022-06-04/tuxpaint-stamps-2022.06.04.tar.gz",
+                    "sha256": "842065576fae554358e00e51d71a492616a6490b12b592228067477c287a0bf8"
                 }
             ],
             "build-commands": [
