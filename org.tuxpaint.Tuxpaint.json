@@ -1,7 +1,7 @@
 {
     "app-id": "org.tuxpaint.Tuxpaint",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -24,13 +24,6 @@
         "*.a"
     ],
     "modules": [
-        "shared-modules/SDL/SDL-1.2.15.json",
-        "shared-modules/smpeg/smpeg-0.4.5.json",
-        "shared-modules/SDL/SDL_mixer-1.2.12.json",
-        "shared-modules/SDL/SDL_ttf-2.0.11.json",
-        "shared-modules/SDL/SDL_image-1.2.12.json",
-        "shared-modules/SDL/SDL_pango-0.1.2.json",
-        "SDL_gfx-2.0.25.json",
         {
             "name": "libpaper",
             "config-opts": [
@@ -81,6 +74,8 @@
                 }
             ]
         },
+        "SDL2_gfx.json",
+        "SDL2_Pango.json",
         {
             "name": "tuxpaint",
             "no-autogen": true,
@@ -91,7 +86,8 @@
             ],
             "make-install-args": [
                 "LDFLAGS=-L/app/lib",
-                "PREFIX=/app"
+                "PREFIX=/app",
+                "ARCH_INSTALL=install-man install-importscript"
             ],
             "sources": [
                 {
@@ -102,19 +98,14 @@
                         "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.28/tuxpaint-0.9.28-sdl1.tar.gz",
-                    "sha256": "6f846ef46ab219fda3326336e2ccc65cedaf6d2c42c2f3e603ab601145a1868b"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.29/tuxpaint-0.9.29.tar.gz",
+                    "sha256": "575403c54c7243e5b269a71fc1aa0738e3937764787e2acf89686bd77c5ae6ca"
                 },
                 {
                     "type": "patch",
                     "paths": [
-                        "tuxpaint-bash-completion.patch",
-                        "tuxpaint-Install-desktop-file-and-icons.patch"
+                        "Makefile-sdl2_gfx-pkgconfig.patch"
                     ]
-                },
-                {
-                    "type": "file",
-                    "path": "org.tuxpaint.Tuxpaint.metainfo.xml"
                 },
                 {
                     "type": "file",
@@ -122,7 +113,10 @@
                 }
             ],
             "post-install": [
-                "install -m644 -Dt /app/share/metainfo org.tuxpaint.Tuxpaint.metainfo.xml",
+                "install -m644 -Dt /app/share/icons/hicolor/scalable/apps data/images/tuxpaint-icon.svg",
+                "for size in 192 128 96 64 48 32 22 16; do install -m644 -D data/images/icon${size}x${size}.png /app/share/icons/hicolor/${size}x${size}/apps/tuxpaint.png; done",
+                "install -m644 -Dt /app/share/applications src/tuxpaint.desktop",
+                "install -m644 -Dt /app/share/metainfo src/org.tuxpaint.Tuxpaint.appdata.xml",
                 "install -m644 -Dt /app/etc/tuxpaint tuxpaint.conf"
             ]
         },
