@@ -48,8 +48,8 @@
                         "url-template": "https://github.com/rrthomas/libpaper/releases/download/v${version}/libpaper-${version}.tar.gz"
                     },
                     "type": "archive",
-                    "url": "http://http.debian.net/debian/pool/main/libp/libpaper/libpaper_1.1.28.tar.gz",
-                    "sha256": "c8bb946ec93d3c2c72bbb1d7257e90172a22a44a07a07fb6b802a5bb2c95fddc"
+                    "url": "https://github.com/rrthomas/libpaper/releases/download/v2.1.0/libpaper-2.1.0.tar.gz",
+                    "sha256": "474e9575e1235a0d8e3661f072de0193bab6ea1023363772f698a2cc39d640cf"
                 },
                 {
                     "type": "script",
@@ -76,8 +76,8 @@
                     },
                     "type": "git",
                     "url": "https://github.com/ImageOptim/libimagequant",
-                    "tag": "2.13.1",
-                    "commit": "5ea4f8a3c3186fa83e1e7c08c9238e071eedb95f"
+                    "tag": "2.18.0",
+                    "commit": "caad5fb29bcc38a842addbac3c357becf3addf1e"
                 }
             ]
         },
