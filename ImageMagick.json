@@ -8,6 +8,11 @@
     ],
     "sources": [
         {
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 1372,
+                "url-template": "https://github.com/ImageMagick/ImageMagick/archive/${version}.tar.gz"
+            },
             "type": "archive",
             "url": "https://github.com/ImageMagick/ImageMagick/archive/7.0.10-27.tar.gz",
             "sha256": "c3398c92108fac35a0951c26869e328d6a6654bbfdc1b5a7c3dc100181ab8811"

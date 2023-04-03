@@ -42,6 +42,11 @@
             ],
             "sources": [
                 {
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 15136,
+                        "url-template": "https://github.com/rrthomas/libpaper/releases/download/v${version}/libpaper-${version}.tar.gz"
+                    },
                     "type": "archive",
                     "url": "http://http.debian.net/debian/pool/main/libp/libpaper/libpaper_1.1.28.tar.gz",
                     "sha256": "c8bb946ec93d3c2c72bbb1d7257e90172a22a44a07a07fb6b802a5bb2c95fddc"
@@ -60,6 +65,15 @@
             "name": "libimagequant",
             "sources": [
                 {
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 12768,
+                        "//": "TODO: Version 4 is rewritten in Rust",
+                        "versions": {
+                            "<": "4.0.0"
+                        },
+                        "tag-template": "${version}"
+                    },
                     "type": "git",
                     "url": "https://github.com/ImageOptim/libimagequant",
                     "tag": "2.13.1",
