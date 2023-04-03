@@ -85,7 +85,7 @@
                         "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8901,
-                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}-sdl1.tar.gz"
+                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
                     },
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.28/tuxpaint-0.9.28-sdl1.tar.gz",
