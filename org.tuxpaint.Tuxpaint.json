@@ -134,7 +134,7 @@
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://sourceforge.net/projects/tuxpaint/rss?path=/tuxpaint-stamps",
-                        "pattern": "(https?://.*/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
+                        "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
                     "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2022-06-04/tuxpaint-stamps-2022.06.04.tar.gz",
