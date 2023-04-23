@@ -1,0 +1,44 @@
+{
+    "name": "SDL2_gfx",
+    "//": "Code assumes that if __GNUC__ is defined and MMX is enabled, then x86-specific mmintrin.h is available",
+    "config-opts": [
+        "--disable-static",
+        "--disable-mmx"
+    ],
+    "build-options": {
+        "arch": {
+            "i386": {
+                "config-opts": [
+                    "--enable-mmx"
+                ]
+            },
+            "x86_64": {
+                "config-opts": [
+                    "--enable-mmx"
+                ]
+            }
+        }
+    },
+    "rm-configure": true,
+    "sources": [
+        {
+            "//x-checker-data": {
+                "//": "This fork is alive but the autotools build is broken and the CMake build tries to download SDL2 again",
+                "type": "json",
+                "url": "https://api.github.com/repos/mupfdev/SDL2_gfx/releases/latest",
+                "tag-query": ".tag_name",
+                "version-query": "$tag"
+            },
+            "type": "archive",
+            "url": "https://downloads.sourceforge.net/project/sdl2gfx/SDL2_gfx-1.0.4.tar.gz",
+            "sha256": "63e0e01addedc9df2f85b93a248f06e8a04affa014a835c2ea34bfe34e576262"
+        },
+        {
+            "//": "The bundled version of config.guess is from 2012-01-01 and fails on aarch64",
+            "type": "shell",
+            "commands": [
+                "rm -f config.sub config.guess"
+            ]
+        }
+    ]
+}

@@ -8,9 +8,14 @@
     ],
     "sources": [
         {
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 1372,
+                "url-template": "https://github.com/ImageMagick/ImageMagick/archive/${version}.tar.gz"
+            },
             "type": "archive",
-            "url": "https://github.com/ImageMagick/ImageMagick/archive/7.0.10-27.tar.gz",
-            "sha256": "c3398c92108fac35a0951c26869e328d6a6654bbfdc1b5a7c3dc100181ab8811"
+            "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-7.tar.gz",
+            "sha256": "0d07a4ada1cedeb02cf8f6592f02b0bbfea3c51ca10927ae4d42f0fb195e4d22"
         }
     ],
     "cleanup": [

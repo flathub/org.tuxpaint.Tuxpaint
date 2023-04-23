@@ -1,0 +1,17 @@
+{
+    "name": "SDL2_Pango",
+    "sources": [
+        {
+            "x-checker-data": {
+                "type": "json",
+                "url": "https://api.github.com/repos/markuskimius/SDL2_Pango/releases/latest",
+                "tag-query": ".tag_name",
+                "version-query": "$tag | sub(\"^v\"; \"\")"
+            },
+            "type": "git",
+            "url": "https://github.com/markuskimius/SDL2_Pango.git",
+            "tag": "v2.1.5",
+            "commit": "3afd884fddf8d81dbe2c140135deea0c79de31c1"
+        }
+    ]
+}
