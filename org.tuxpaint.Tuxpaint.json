@@ -93,15 +93,15 @@
             ],
             "sources": [
                 {
-                    "x-checker-data": {
+                    "//x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8901,
                         "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.29/tuxpaint-0.9.29.tar.gz",
-                    "sha256": "575403c54c7243e5b269a71fc1aa0738e3937764787e2acf89686bd77c5ae6ca"
+                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.30-beta/tuxpaint-0.9.30-rc1.tar.gz",
+                    "sha256": "013a69248a0bc01be4c7a91be70aa55fe3b2f27999d33444ea2cab9765af0191"
                 },
                 {
                     "type": "patch",
@@ -128,14 +128,14 @@
             "buildsystem": "simple",
             "sources": [
                 {
-                    "x-checker-data": {
+                    "//x-checker-data": {
                         "type": "html",
                         "url": "https://sourceforge.net/projects/tuxpaint/rss?path=/tuxpaint-stamps",
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2023-04-02/tuxpaint-stamps-2023.04.02.tar.gz",
-                    "sha256": "42924b70298e0a86978cd121b1e0a8be930fa126e1ee6209e5f8c50b4ee33fac"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2023-05-XX-beta/tuxpaint-stamps-2023.05.14.tar.gz",
+                    "sha256": "055b54177c2081d48385d8a5954fe30de9b79e55fee12a444071d96737dcd09e"
                 }
             ],
             "build-commands": [
