@@ -99,8 +99,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint/(\\d+\\.\\d+\\.\\d+)/tuxpaint-\\2.tar.gz)"
                     },
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.29/tuxpaint-0.9.29.tar.gz",
-                    "sha256": "575403c54c7243e5b269a71fc1aa0738e3937764787e2acf89686bd77c5ae6ca"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.30/tuxpaint-0.9.30.tar.gz",
+                    "sha256": "c60ac9cc67b041a45e5b7828eda11d50f846a467b485db2c84d628e74a5fe1b1"
                 },
                 {
                     "type": "patch",
