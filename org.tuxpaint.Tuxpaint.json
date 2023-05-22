@@ -94,14 +94,13 @@
             "sources": [
                 {
                     "x-checker-data": {
-                        "is-main-source": true,
-                        "type": "anitya",
-                        "project-id": 8901,
-                        "url-template": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/${version}/tuxpaint-${version}.tar.gz"
+                        "type": "html",
+                        "url": "https://sourceforge.net/projects/tuxpaint/rss?path=/tuxpaint",
+                        "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint/(\\d+\\.\\d+\\.\\d+)/tuxpaint-\\2.tar.gz)"
                     },
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.29/tuxpaint-0.9.29.tar.gz",
-                    "sha256": "575403c54c7243e5b269a71fc1aa0738e3937764787e2acf89686bd77c5ae6ca"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.30/tuxpaint-0.9.30.tar.gz",
+                    "sha256": "c60ac9cc67b041a45e5b7828eda11d50f846a467b485db2c84d628e74a5fe1b1"
                 },
                 {
                     "type": "patch",
@@ -134,8 +133,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2023-04-02/tuxpaint-stamps-2023.04.02.tar.gz",
-                    "sha256": "42924b70298e0a86978cd121b1e0a8be930fa126e1ee6209e5f8c50b4ee33fac"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2023-05-19/tuxpaint-stamps-2023.05.19.tar.gz",
+                    "sha256": "21944b6c19133518eeed6b84bde3fdda741ef0aa2a833c4cb1de4fdabdc12244"
                 }
             ],
             "build-commands": [
