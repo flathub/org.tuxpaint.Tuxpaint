@@ -94,6 +94,7 @@
             "sources": [
                 {
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "html",
                         "url": "https://sourceforge.net/projects/tuxpaint/rss?path=/tuxpaint",
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint/(\\d+\\.\\d+\\.\\d+)/tuxpaint-\\2.tar.gz)"
@@ -128,6 +129,7 @@
             "sources": [
                 {
                     "x-checker-data": {
+                        "is-important": true,
                         "type": "html",
                         "url": "https://sourceforge.net/projects/tuxpaint/rss?path=/tuxpaint-stamps",
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
