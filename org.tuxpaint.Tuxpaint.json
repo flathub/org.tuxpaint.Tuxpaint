@@ -89,7 +89,7 @@
             "make-install-args": [
                 "LDFLAGS=-L/app/lib",
                 "PREFIX=/app",
-                "ARCH_INSTALL=install-man install-importscript"
+                "PACKAGE_ONLY=yes"
             ],
             "sources": [
                 {
@@ -116,10 +116,8 @@
             ],
             "post-install": [
                 "install -m644 -Dt /app/share/icons/hicolor/scalable/apps data/images/tuxpaint-icon.svg",
-                "for size in 192 128 96 64 48 32 22 16; do install -m644 -D data/images/icon${size}x${size}.png /app/share/icons/hicolor/${size}x${size}/apps/tuxpaint.png; done",
-                "desktop-file-edit --set-key=Keywords --set-value=tuxpaint src/tuxpaint.desktop",
-                "install -m644 -Dt /app/share/applications src/tuxpaint.desktop",
-                "install -m644 -Dt /app/share/metainfo src/org.tuxpaint.Tuxpaint.appdata.xml",
+                "rm /app/share/applications/tuxpaint-fullscreen.desktop",
+                "desktop-file-edit --set-key=Keywords --set-value=tuxpaint /app/share/applications/tuxpaint.desktop",
                 "install -m644 -Dt /app/etc/tuxpaint tuxpaint.conf"
             ]
         },
