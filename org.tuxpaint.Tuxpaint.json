@@ -43,8 +43,8 @@
                         "url-template": "https://github.com/rrthomas/libpaper/releases/download/v${version}/libpaper-${version}.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz",
-                    "sha256": "a4e1297b69b9fd1054ee7f5bcc55f4d56da152d41d2eabdf18727a9cddc1f402"
+                    "url": "https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz",
+                    "sha256": "1fda0cf64efa46b9684a4ccc17df4386c4cc83254805419222c064bf62ea001f"
                 },
                 {
                     "type": "script",
@@ -94,6 +94,7 @@
             "sources": [
                 {
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "html",
                         "url": "https://sourceforge.net/projects/tuxpaint/rss?path=/tuxpaint",
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint/(\\d+\\.\\d+\\.\\d+)/tuxpaint-\\2.tar.gz)"
@@ -128,6 +129,7 @@
             "sources": [
                 {
                     "x-checker-data": {
+                        "is-important": true,
                         "type": "html",
                         "url": "https://sourceforge.net/projects/tuxpaint/rss?path=/tuxpaint-stamps",
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
