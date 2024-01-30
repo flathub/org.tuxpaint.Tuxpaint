@@ -43,8 +43,8 @@
                         "url-template": "https://github.com/rrthomas/libpaper/releases/download/v${version}/libpaper-${version}.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz",
-                    "sha256": "1fda0cf64efa46b9684a4ccc17df4386c4cc83254805419222c064bf62ea001f"
+                    "url": "https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar.gz",
+                    "sha256": "b798be7c52036e684a90a68f0be954f173fea87886f8a1d25c6514a279216f4a"
                 },
                 {
                     "type": "script",
@@ -100,8 +100,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint/(\\d+\\.\\d+\\.\\d+)/tuxpaint-\\2.tar.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.31/tuxpaint-0.9.31.tar.gz",
-                    "sha256": "1a85c04fa5c9ae6b3ffd2ca8fa86a84c0c8b462b5059fa1fc2c445b5cfa857ee"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.32/tuxpaint-0.9.32.tar.gz",
+                    "sha256": "09cce22241481dc1360fc4bc5d4da1d31815d7a2563b9e9fa217a672ba974bf2"
                 },
                 {
                     "type": "patch",
@@ -135,8 +135,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2023-07-20/tuxpaint-stamps-2023.07.20.tar.gz",
-                    "sha256": "0fb420617451759a4ddcd8bfe255e85c2b6c24e453f93da11da2d41698037842"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2024-01-29/tuxpaint-stamps-2024.01.29.tar.gz",
+                    "sha256": "1b0271f6da9a5fb23adb7b494183b9de289a02966d62c4cb430da9b4120594a9"
                 }
             ],
             "build-commands": [
