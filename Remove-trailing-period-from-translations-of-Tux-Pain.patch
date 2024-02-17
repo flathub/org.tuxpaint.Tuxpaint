@@ -1,0 +1,44 @@
+From eac10ed522394f050193b3a5f59d149664fd2a97 Mon Sep 17 00:00:00 2001
+From: Will Thompson <will@willthompson.co.uk>
+Date: Sat, 17 Feb 2024 23:00:02 +0000
+Subject: [PATCH] Remove trailing period from translations of "Tux Paint"
+
+appstreamcli validate gets very upset if you have a trailing period in
+the name of the app:
+
+    E: org.tuxpaint.Tuxpaint:116: name-has-dot-suffix P\u025bntiri Tukisi .
+    E: org.tuxpaint.Tuxpaint:119: name-has-dot-suffix Tuks il\u0259 \u015f\u0259kil \u00e7\u0259k.
+---
+ src/po/az.po | 2 +-
+ src/po/bm.po | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/po/az.po b/src/po/az.po
+index 488ea366..42238f88 100644
+--- a/src/po/az.po
++++ b/src/po/az.po
+@@ -335,7 +335,7 @@ msgstr ""
+ 
+ #: ../org.tuxpaint.Tuxpaint.appdata.xml.in:9 ../tuxpaint.desktop.in:3
+ msgid "Tux Paint"
+-msgstr "Tuks ilə şəkil çək."
++msgstr "Tuks ilə şəkil çək"
+ 
+ #: ../org.tuxpaint.Tuxpaint.appdata.xml.in:10 ../tuxpaint.desktop.in:10
+ #: ../tuxpaint-fullscreen.desktop.in:10
+diff --git a/src/po/bm.po b/src/po/bm.po
+index 42441cff..c29fc76a 100644
+--- a/src/po/bm.po
++++ b/src/po/bm.po
+@@ -337,7 +337,7 @@ msgstr ""
+ 
+ #: ../org.tuxpaint.Tuxpaint.appdata.xml.in:9 ../tuxpaint.desktop.in:3
+ msgid "Tux Paint"
+-msgstr "Pɛntiri Tukisi ."
++msgstr "Pɛntiri Tukisi"
+ 
+ #: ../org.tuxpaint.Tuxpaint.appdata.xml.in:10 ../tuxpaint.desktop.in:10
+ #: ../tuxpaint-fullscreen.desktop.in:10
+-- 
+2.43.0
+

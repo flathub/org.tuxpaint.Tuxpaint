@@ -109,7 +109,8 @@
                         "Makefile-sdl2_gfx-pkgconfig.patch",
                         "appdata-Replace-named-display_length-with-constant-v.patch",
                         "appdata-Indicate-that-Tuxpaint-is-fully-offline.patch",
-                        "appdata-Add-new-developer-tag.patch"
+                        "appdata-Add-new-developer-tag.patch",
+                        "Remove-trailing-period-from-translations-of-Tux-Pain.patch"
 
                     ]
                 },
