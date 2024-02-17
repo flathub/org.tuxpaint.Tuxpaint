@@ -1,0 +1,25 @@
+From 259442d65f1fe14e3fd66d5f6a5a735403558a4a Mon Sep 17 00:00:00 2001
+From: Will Thompson <will@willthompson.co.uk>
+Date: Sat, 17 Feb 2024 20:14:09 +0000
+Subject: [PATCH 2/3] appdata: Indicate that Tuxpaint is fully offline
+
+https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-relations-internet
+---
+ src/org.tuxpaint.Tuxpaint.appdata.xml.in | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/org.tuxpaint.Tuxpaint.appdata.xml.in b/src/org.tuxpaint.Tuxpaint.appdata.xml.in
+index c1f73175..799c1a16 100644
+--- a/src/org.tuxpaint.Tuxpaint.appdata.xml.in
++++ b/src/org.tuxpaint.Tuxpaint.appdata.xml.in
+@@ -173,6 +173,7 @@
+   <requires>
+     <display_length compare="ge">500</display_length>
+     <display_length compare="le">32000</display_length>
++    <internet>offline-only</internet>
+   </requires>
+   <translation type="gettext">tuxpaint</translation>
+   <launchable type="desktop-id">tuxpaint.desktop</launchable>
+-- 
+2.43.0
+
