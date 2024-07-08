@@ -100,18 +100,13 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint/(\\d+\\.\\d+\\.\\d+)/tuxpaint-\\2.tar.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.32/tuxpaint-0.9.32.tar.gz",
-                    "sha256": "09cce22241481dc1360fc4bc5d4da1d31815d7a2563b9e9fa217a672ba974bf2"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.33-beta/tuxpaint-0.9.33-rc1.tar.gz",
+                    "sha256": "e2458de56f11358ba3774fdef757fa6678070466d77354eac555d1f9ae42c29c"
                 },
                 {
                     "type": "patch",
                     "paths": [
-                        "Makefile-sdl2_gfx-pkgconfig.patch",
-                        "appdata-Replace-named-display_length-with-constant-v.patch",
-                        "appdata-Indicate-that-Tuxpaint-is-fully-offline.patch",
-                        "appdata-Add-new-developer-tag.patch",
-                        "Remove-trailing-period-from-translations-of-Tux-Pain.patch"
-
+                        "Makefile-sdl2_gfx-pkgconfig.patch"
                     ]
                 },
                 {
@@ -140,8 +135,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2024-01-29/tuxpaint-stamps-2024.01.29.tar.gz",
-                    "sha256": "1b0271f6da9a5fb23adb7b494183b9de289a02966d62c4cb430da9b4120594a9"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2024-07-XX-beta/tuxpaint-stamps-2024.07.06.tar.gz",
+                    "sha256": "e7986491d51a2576a26a93515efd0cbbe46d736fc63c49258f48106d1eed4d12"
                 }
             ],
             "build-commands": [
