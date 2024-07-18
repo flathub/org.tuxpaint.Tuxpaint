@@ -135,8 +135,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2024-07-XX-beta/tuxpaint-stamps-2024.07.06.tar.gz",
-                    "sha256": "e7986491d51a2576a26a93515efd0cbbe46d736fc63c49258f48106d1eed4d12"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2024-07-17/tuxpaint-stamps-2024.07.17.tar.gz",
+                    "sha256": "fe925fe4b3644c23bd292d2faf7b600dbecbaba8c93828380b5f854d9bfab156"
                 }
             ],
             "build-commands": [
