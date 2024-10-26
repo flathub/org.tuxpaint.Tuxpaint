@@ -103,6 +103,10 @@
                     "sha256": "b761df5ed386a9e04a6809ab3e0cbf2126f10b770527cb2b5f190ff5e370ed03"
                 },
                 {
+                    "type": "patch",
+                    "path": "Expose-SDL2_gfx-to-magic-plugins.patch"
+                },
+                {
                     "type": "file",
                     "path": "tuxpaint.conf"
                 }
