@@ -99,8 +99,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint/(\\d+\\.\\d+\\.\\d+)/tuxpaint-\\2.tar.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.34/tuxpaint-0.9.34.tar.gz",
-                    "sha256": "b761df5ed386a9e04a6809ab3e0cbf2126f10b770527cb2b5f190ff5e370ed03"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint/0.9.35-beta/tuxpaint-0.9.35-rc1.tar.gz",
+                    "sha256": "b8c6a24885c806c80502eaec20ab70b0c70c46fbf614d152d62c23f782b87e13"
                 },
                 {
                     "type": "patch",
@@ -132,8 +132,8 @@
                         "pattern": "(https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/\\d{4}-\\d{2}-\\d{2}/tuxpaint-stamps-(\\d{4}\\.\\d{2}\\.\\d{2})\\.tar\\.gz)"
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2024-10-25/tuxpaint-stamps-2024.10.25.tar.gz",
-                    "sha256": "5441a113a57cbf5e00e7a6a4ee75e1daeac3c963b3baac84fea7b168e07876a7"
+                    "url": "https://sourceforge.net/projects/tuxpaint/files/tuxpaint-stamps/2025-04-XX-beta/tuxpaint-stamps-2025.03.31.tar.gz",
+                    "sha256": "bff6de678a1b3fd912eeaeae9432cebb487970b0289c1f49e2bea333c68e7855"
                 }
             ],
             "build-commands": [
