@@ -1,0 +1,34 @@
+From b16c9fdb0a2fbe28400b6990bfa8e21d4f9a274c Mon Sep 17 00:00:00 2001
+From: Will Thompson <will@willthompson.co.uk>
+Date: Sat, 26 Oct 2024 11:21:10 +0100
+Subject: [PATCH] Expose SDL2_gfx to magic plugins
+
+---
+ Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 8a69bbf58..56ca6ed0e 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1460,7 +1460,7 @@ obj:
+ 
+ ######
+ 
+-MAGIC_SDL_CPPFLAGS:=$(shell $(PKG_CONFIG) $(SDL_PCNAME) --cflags)
++MAGIC_SDL_CPPFLAGS:=$(shell $(PKG_CONFIG) $(SDL_PCNAME) --cflags) $(shell $(PKG_CONFIG) SDL2_gfx --cflags)
+ 
+ # FIXME: Expose SDL_rotozoom to Magic API? -bjk 2021.09.06
+ windows_MAGIC_SDL_LIBS:=-L/usr/local/lib $(LIBMINGW) $(shell $(PKG_CONFIG) $(SDL_PCNAME) --libs) -lSDL2_image -lSDL2_ttf $(SDL_MIXER_LIB) -lSDL2_gfx
+@@ -1468,7 +1468,7 @@ os2_MAGIC_SDL_LIBS:=-L/@unixroot/usr/lib $(shell $(PKG_CONFIG) $(SDL_PCNAME) --l
+ macos_MAGIC_SDL_LIBS:=-L/usr/local/lib $(shell $(PKG_CONFIG) $(SDL_PCNAME) --libs) -lSDL2_image -lSDL2_ttf $(SDL_MIXER_LIB) -lSDL2_gfx
+ ios_MAGIC_SDL_LIBS:=$(shell $(PKG_CONFIG) $(SDL_PCNAME) --libs) -lSDL2_image -lSDL2_ttf $(SDL_MIXER_LIB) -lSDL2_gfx
+ beos_MAGIC_SDL_LIBS:=-L/usr/local/lib $(shell $(PKG_CONFIG) $(SDL_PCNAME) --libs) -lSDL2_image -lSDL2_ttf $(SDL_MIXER_LIB)
+-linux_MAGIC_SDL_LIBS:=-L/usr/local/lib $(shell $(PKG_CONFIG) $(SDL_PCNAME) --libs) -lSDL2_image -lSDL2_ttf $(SDL_MIXER_LIB)
++linux_MAGIC_SDL_LIBS:=-L/usr/local/lib $(shell $(PKG_CONFIG) $(SDL_PCNAME) --libs) -lSDL2_image -lSDL2_ttf $(SDL_MIXER_LIB) $(shell $(PKG_CONFIG) SDL2_gfx --libs)
+ MAGIC_SDL_LIBS:=$($(OS)_MAGIC_SDL_LIBS)
+ 
+ windows_MAGIC_ARCH_LINKS=-lintl $(PNG)
+-- 
+2.47.0
+
