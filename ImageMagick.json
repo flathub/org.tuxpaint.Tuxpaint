@@ -14,8 +14,8 @@
                 "url-template": "https://github.com/ImageMagick/ImageMagick/archive/${version}.tar.gz"
             },
             "type": "archive",
-            "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-39.tar.gz",
-            "sha256": "b2eb652d9221bdeb65772503891d8bfcfc36b3b1a2c9bb35b9d247a08965fd5d"
+            "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-0.tar.gz",
+            "sha256": "03fe29e376b5938255b3fdb8d1f50515caa48055c0c2743faaeea52fc673a38b"
         }
     ],
     "cleanup": [
